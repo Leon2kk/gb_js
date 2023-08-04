@@ -18,7 +18,7 @@ function numCube(num) {
 let zp = prompt("Задание 2. Введите заработную плату");
 
 if (Number.isInteger(Number(zp)))
-	console.log(`Размер заработной платы за вычетом налогов равен ${ZP(zp)}`);
+	console.log(`Размер заработной платы от ${zp} за вычетом налогов равен ${ZP(zp)}`);
 else
 	console.log("Значение задано неверно");
 

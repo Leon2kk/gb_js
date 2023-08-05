@@ -46,7 +46,7 @@ function getMinInteger(masmin) {
 }
 
 function getFindInteger(masfind, fined) {
-	return masfind.indexOf(fined);
+	return masfind.includes(fined);
 }
 
 for (let i = 0; i < n; i++)
@@ -55,7 +55,7 @@ for (let i = 0; i < n; i++)
 console.log(`Числа ${masNum}`);
 console.log(`Сумма чисел ${masNum} = ${getSumInteger(masNum)}`);
 console.log(`Мин число из ${masNum} = ${getMinInteger(masNum)}`);
-console.log(`${fined} - ${(getFindInteger(masNum)?'содержится':'не содержится')} в ${masNum}`);
+console.log(`${fined} - ${(getFindInteger(masNum, fined)?'содержится':'не содержится')} в ${masNum}`);
 
 
 let piromid = '';

@@ -56,3 +56,12 @@ console.log(`Числа ${masNum}`);
 console.log(`Сумма чисел ${masNum} = ${getSumInteger(masNum)}`);
 console.log(`Мин число из ${masNum} = ${getMinInteger(masNum)}`);
 console.log(`${fined} - ${(getFindInteger(masNum)?'содержится':'не содержится')} в ${masNum}`);
+
+
+let piromid = '';
+for (let i = 0; i < 20; i++)
+{
+	piromid += '*';
+	console.log(piromid);
+}
+	

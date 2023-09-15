@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Products</title>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .product {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .product .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .product .description {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .product .price {
+      font-size: 18px;
+      color: #00b300;
+    }
+    .product .availability {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Продукты</h1>
+    <div id="products"></div>
+  </div>
+
+  <script>
+    // Загрузка JSON данных
+    fetch('./data.json')
+      .then(response => response.json())
+      .then(data => {
+        const productsContainer = document.getElementById("products");
+
+        console.log(data.food_products);
+
+        // Создание HTML разметки для каждого продукта
+        data.food_products.forEach((product) => {
+          const productDiv = document.createElement("div");
+          productDiv.classList.add("product");
+
+          const image = document.createElement("img");
+          image.src = product.image;
+          productDiv.appendChild(image);
+
+          const name = document.createElement("div");
+          name.classList.add("name");
+          name.textContent = product.name;
+          productDiv.appendChild(name);
+
+          const description = document.createElement("div");
+          description.classList.add("description");
+          description.textContent = product.description;
+          productDiv.appendChild(description);
+
+          const price = document.createElement("div");
+          price.classList.add("price");
+          price.textContent = "Price: $" + product.price;
+          productDiv.appendChild(price);
+
+          const availability = document.createElement("div");
+          availability.classList.add("availability");
+          availability.textContent = product.availability ? "In Stock" : "Out of Stock";
+          productDiv.appendChild(availability);
+
+          productsContainer.appendChild(productDiv);
+        });
+      });
+  </script>
+</body>
+</html>

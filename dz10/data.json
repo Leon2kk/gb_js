@@ -1,0 +1,74 @@
+{
+    "food_products": [
+      {
+        "name": "Яблоко",
+        "description": "Свежее и сочное зеленое яблоко",
+        "image": "https://example.com/apple.jpg",
+        "price": 1.99,
+        "availability": true
+      },
+      {
+        "name": "Банан",
+        "description": "Зрелый и сладкий желтый банан",
+        "image": "https://example.com/banana.jpg",
+        "price": 0.99,
+        "availability": true
+      },
+      {
+        "name": "Морковь",
+        "description": "Красная морковь полезна для зрения",
+        "image": "https://example.com/carrot.jpg",
+        "price": 0.50,
+        "availability": true
+      },
+      {
+        "name": "Огурец",
+        "description": "Свежий и хрустящий огурец",
+        "image": "https://example.com/cucumber.jpg",
+        "price": 0.75,
+        "availability": true
+      },
+      {
+        "name": "Картофель",
+        "description": "Вкусный и питательный картофель",
+        "image": "https://example.com/potato.jpg",
+        "price": 0.35,
+        "availability": true
+      },
+      {
+        "name": "Помидор",
+        "description": "Сочный и спелый помидор",
+        "image": "https://example.com/tomato.jpg",
+        "price": 1.10,
+        "availability": true
+      },
+      {
+        "name": "Яйцо",
+        "description": "Свежее куриное яйцо",
+        "image": "https://example.com/egg.jpg",
+        "price": 2.50,
+        "availability": true
+      },
+      {
+        "name": "Курица",
+        "description": "Сочное и нежное мясо курицы",
+        "image": "https://example.com/chicken.jpg",
+        "price": 5.99,
+        "availability": true
+      },
+      {
+        "name": "Говядина",
+        "description": "Питательная и сочная говядина",
+        "image": "https://example.com/beef.jpg",
+        "price": 8.75,
+        "availability": true
+      },
+      {
+        "name": "Свинина",
+        "description": "Вкусная и ароматная свинина",
+        "image": "https://example.com/pork.jpg",
+        "price": 6.50,
+        "availability": true
+      }
+    ]
+  }

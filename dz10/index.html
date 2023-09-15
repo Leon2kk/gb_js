@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Products</title>
+  <title>Продукты</title>
   <style>
     .container {
       max-width: 600px;
@@ -47,10 +47,14 @@
     <h1>Продукты</h1>
     <div id="products"></div>
   </div>
-
+  
   <script>
+
+
     // Загрузка JSON данных
-    fetch('./data.json')
+    //import data from './data.json' assert { type: 'json' }; 
+    //fetch('./data.json')    
+    fetch('https://raw.githubusercontent.com/Leon2kk/gb_js/main/dz10/data.json')
       .then(response => response.json())
       .then(data => {
         const productsContainer = document.getElementById("products");
@@ -78,12 +82,12 @@
 
           const price = document.createElement("div");
           price.classList.add("price");
-          price.textContent = "Price: $" + product.price;
+          price.textContent = "Цена: $" + product.price;
           productDiv.appendChild(price);
 
           const availability = document.createElement("div");
           availability.classList.add("availability");
-          availability.textContent = product.availability ? "In Stock" : "Out of Stock";
+          availability.textContent = product.availability ? "В наличии" : "Нет в наличии";
           productDiv.appendChild(availability);
 
           productsContainer.appendChild(productDiv);

@@ -37,21 +37,19 @@ function createCounter() {
 function findElementByClass(elements, findclass){
 	console.log(elements +' '+ findclass);
 	
-	elements.forEach( item => {
-
-			if (item.classList.contains(findclass))
+		let item = elements;
+			if (!item.classList.contains(findclass))
 			{   
 				console.log('true');
 				return item;
 				
 			}
 		else 
+			{
 			if	(!item.childNodes) 
-				this.findElementByClass(item.childNodes, findclass);
-	
-	});
-
-	
+				console.log('false');
+				findElementByClass(item.childNodes, findclass);
+			}
 }
 
 const rootElement = document.getElementById('root');

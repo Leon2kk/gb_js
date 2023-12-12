@@ -23,3 +23,34 @@ body{
 .error{
     color: red;
 }
+
+.products{
+    width: 300px;
+    margin: 0 auto;  
+}
+
+.products__initial{
+    width: 100%;
+    margin: 0 15px;
+}
+
+.products__list-block{
+    width: 100%;
+    margin: 0 15px;
+}
+
+.products__item{
+    list-style-type: none;
+}
+.hide{
+    display: none;
+}
+.products__list, .products__feedback-list{
+    padding: 0;
+}
+.products__feedback-item{
+    list-style-type: none;    
+    width: 100%;
+    border: 1px solid gray;
+    padding: 0;
+}

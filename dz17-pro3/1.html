@@ -11,9 +11,13 @@
     <form class="feedback_form">
         <input type="text" placeholder="Введите название продукта" id="name"/>
         <textarea placeholder="Напишите отзый о продукте" rows="7" id="text"></textarea>
-        <button id="send">Добавить отзыв</button>
+        <button id="send" click="return false">Добавить отзыв</button>
         <div class="error" id="error"></div>        
-    </form>   
+    </form>
+    <button class="feedback__btn feedback__btn_back">На страницу товаров</button>
+
+    <div class="products__list-block">
+    </div>
     <script src="srcipt.js"></script>
   </body>
 </html>

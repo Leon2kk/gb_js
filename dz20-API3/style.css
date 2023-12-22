@@ -1,0 +1,9 @@
+.imageContent{
+    max-width: 800px;
+    margin: 15px auto;
+    text-align:  center;
+}
+.image{
+    display: block;
+    margin: 0 auto; 
+}
